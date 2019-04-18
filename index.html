@@ -45,11 +45,11 @@ Google Maps Mashup Starter Code:
 
 	var map;
 
-	var parks = [
+	var places = [
 
-		{"park":"Yellowstone","coords":[44.4280,-110.5885]},
+		{"place":"Scarborough","coords":[0.000000,12.000000]},
 
-		{"park":"Glacier","coords":[48.7596, -113.7870]}
+		{"place":"Brampton","coords":[0.000000,12.000000]}
 
 		];
 
@@ -69,13 +69,13 @@ Google Maps Mashup Starter Code:
 
 
 
-		mashParks(parks);
+		mashPlace(places);
 
 	}
 
 
 
-	function mashParks(results) {
+	function mashPlace(results) {
 
 	for (var i = 0; i < results.length; i++) {
 
@@ -89,7 +89,7 @@ Google Maps Mashup Starter Code:
 
 			map: map,
 
-			label:results[i].park
+			label:results[i].place
 
 			});
 
